@@ -3,9 +3,18 @@ import React, { Component } from 'react'
 
 export default class Bomb extends Component {
 
-  state = {
-      secondsLeft: this.props.initialCount
-  }
+//   state = {
+//       secondsLeft: this.props.initialCount
+//   }
+
+constructor(props) {
+    super(props)
+    this.state= {
+        secondsLeft: this.props.initialCount
+    }
+}
+
+
 
     render() {
         return (
